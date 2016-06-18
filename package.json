@@ -1,5 +1,6 @@
 {
 	"dependencies": {
-		"requrl": "*"
+		"requrl": "*",
+		"iconv-lite": "*"
 	}
 }

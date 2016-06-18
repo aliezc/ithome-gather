@@ -1,6 +1,6 @@
-# pengfu-gather
+# ithome-gather
 
-百思不得姐笑话采集脚本，采用node.js编写
+IT之家笑话采集脚本，采用node.js编写
 
 ## 依赖
 
@@ -17,14 +17,16 @@ npm install
 编写一个文件
 
 ```javascript
-var budejie = require('budejie-gather');
+var ithome = require('ithome-gather');
 
-budejie(1,			// 起始页码
+ithome(1,			// 起始页码
 		3,			// 结束页码
 function(res){		// 回调函数
 	for(var i = 0 ; i < res.length; i++){
 		// 结果是一个数组
-		console.log(res[i]);
+		console.log(res[i].title);			// 标题
+		console.log(res[i].time);			// 时间
+		console.log(res[i].body);			// 内容
 	}
 });
 ```
